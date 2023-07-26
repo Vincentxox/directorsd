@@ -1,0 +1,84 @@
+package com.consystec.sc.sv.ws.orm;
+
+import java.math.BigDecimal;
+import java.sql.Timestamp;
+
+public class BodegaVendedor {
+    public static final String N_TABLA = "TC_SC_BODEGA_VENDEDOR";
+    public static final String SEQUENCE = "TC_SC_BODEGA_VENDEDOR_SQ.nextval";
+
+    public final static String CAMPO_TCSCBODEGAVENDEDORID = "tcscbodegavendedorid";
+    public final static String CAMPO_VENDEDOR = "vendedor";
+    public final static String CAMPO_TCSCBODEGAVIRTUALID = "tcscbodegavirtualid";
+    public final static String CAMPO_TCSCCATPAISID = "tcsccatpaisid";
+    public final static String CAMPO_ESTADO = "estado";
+    public final static String CAMPO_CREADO_POR = "creado_por";
+    public final static String CAMPO_CREADO_EL = "creado_el";
+    public final static String CAMPO_MODIFICADO_POR = "modificado_por";
+    public final static String CAMPO_MODIFICADO_EL = "modificado_el";
+
+    private BigDecimal tcscbodegavendedorid;
+	private BigDecimal vendedor;
+	private BigDecimal tcscbodegavirtualid;
+	private BigDecimal tcsccatpaisid;
+	private String estado;
+	private String creado_por;
+	private Timestamp creado_el;
+	private String modificado_por;
+	private Timestamp modificado_el;
+	
+    public BigDecimal getTcsccatpaisid() {
+		return tcsccatpaisid;
+	}
+	public void setTcsccatpaisid(BigDecimal tcsccatpaisid) {
+		this.tcsccatpaisid = tcsccatpaisid;
+	}
+	public BigDecimal getTcscbodegavendedorid() {
+        return tcscbodegavendedorid;
+    }
+    public void setTcscbodegavendedorid(BigDecimal tcscbodegavendedorid) {
+        this.tcscbodegavendedorid = tcscbodegavendedorid;
+    }
+    public BigDecimal getVendedor() {
+        return vendedor;
+    }
+    public void setVendedor(BigDecimal vendedor) {
+        this.vendedor = vendedor;
+    }
+    public BigDecimal getTcscbodegavirtualid() {
+        return tcscbodegavirtualid;
+    }
+    public void setTcscbodegavirtualid(BigDecimal tcscbodegavirtualid) {
+        this.tcscbodegavirtualid = tcscbodegavirtualid;
+    }
+    public String getEstado() {
+        return estado;
+    }
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+    public String getCreado_por() {
+        return creado_por;
+    }
+    public void setCreado_por(String creado_por) {
+        this.creado_por = creado_por;
+    }
+    public Timestamp getCreado_el() {
+        return creado_el;
+    }
+    public void setCreado_el(Timestamp creado_el) {
+        this.creado_el = creado_el;
+    }
+    public String getModificado_por() {
+        return modificado_por;
+    }
+    public void setModificado_por(String modificado_por) {
+        this.modificado_por = modificado_por;
+    }
+    public Timestamp getModificado_el() {
+        return modificado_el;
+    }
+    public void setModificado_el(Timestamp modificado_el) {
+        this.modificado_el = modificado_el;
+    }
+}
